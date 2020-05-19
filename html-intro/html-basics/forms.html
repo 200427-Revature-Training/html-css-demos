@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <p>Forms are used to gather data from the user. Forms are generally submitted
+        to a server for processing. The server might respond with a new HTML
+        document to display the result of the server processing. Forms may also
+        used with asynchronous JavaScript to send the request which might return
+        raw data that can be used to transform the existing HTML document.</p>
+
+    <!-- To structure our form, we start with the form tag -->
+    <!-- Any kind of input tag within a form tag, is considered a field within
+        the form.  If that form submitted, it will be submitted with all data
+        from those input tags. Submitted data is in the form of key-value pairs.
+        Key names are supplied by the 'name' attribute on input tags.  Values are
+        provided by the user. -->
+    <form>
+        <!-- name="" -->
+        <label for="first-name">First name: </label>
+        <input id="first-name" name="firstName" type="text" placeholder="Abby">
+
+        <label for="favorite-color">Favorite Color: </label>
+        <input id="favorite-color" type="color" name="favoriteColor">
+        <input type="number" name="favoriteNumber" placeholder="favorite number">
+
+        <input type="submit">
+    </form>
+
+    <!-- Google search url looks like: http://google.com/search?q=search-string -->
+
+    <h1>Google Search</h1>
+    <form action="http://google.com/search">
+        <input name="q" type="text">
+        <input type="submit">
+    </form>
+
+    <h2>More Form Controls</h2>
+    <form method="POST">
+        <h3>Text Area</h3>
+        <textarea name="bigtext"></textarea>
+
+        <h3>Radio Buttons</h3>
+        <p>A group of radio buttons should use the same name but have different
+            values! If they have different names, then they are considered to be
+            a part of a different groups, and then can be selected individually.
+        </p>
+
+        <fieldset>
+            <legend>Favorite Fruit</legend>
+            <label>
+                Banana:
+                <input type="radio" name="favorite-fruit" value="banana"></input>
+            </label>
+            <label>
+                Apple:
+                <input type="radio" name="favorite-fruit" value="apple"></input>
+            </label>
+            <label>
+                Kiwi:
+                <input type="radio" name="favorite-fruit" value="kiwi"></input>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Snack</legend>
+            <label>
+                Chips:
+                <input type="radio" name="favorite-snacks" value="chips"></input>
+            </label>
+            <label>
+                Cookies:
+                <input type="radio" name="favorite-snacks" value="cookies"></input>
+            </label>
+            <label>
+                Pretzels:
+                <input type="radio" name="favorite-snacks" value="pretzels"></input>
+            </label>
+        </fieldset>
+
+        <legend>Liked Fruit</legend>
+        <label>
+            Apple
+            <input name="liked-fruit" type="checkbox" value="Apple">
+        </label>
+        <label>
+            Banana
+            <input name="liked-fruit" type="checkbox" value="Banana">
+        </label>
+        <label>
+            Kiwi
+            <input name="liked-fruit" type="checkbox" value="Kiwi">
+        </label>
+        </fieldset>
+
+        <!-- Select box (Drop down options box) -->
+        <select name="state">
+            <option value="california">California</option>
+            <option value="idaho">Idaho</option>
+            <option value="florida">Florida</option>
+            <option value="new-york">New York</option>
+            <option value="south-carolina">South Carolina</option>
+            <option value="virginia">Virginia</option>
+
+        </select>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Tables</h1>
+
+    <p>Tables are used to structure data in a 2D structure composed of rows
+        and columns.  Because of the structure of the potential for semantically
+        different parts or sections of a table, tables are composed of many 
+        different tags.</p>
+
+    <section>
+        <h2>Simple Table</h2>
+
+        <!-- Container tag for a table -->
+        <table>
+            <!-- Table row -->
+            <tr>
+                <!-- Cells within row defined using td -->
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>3</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Better Table</h2>
+        <table>
+            <caption>Semester Grades</caption>
+            <!-- Semantic containers for meaningful section of a table -->
+            <thead>
+                <tr>
+                    <!-- th - table heading cells -->
+                    <th></th>
+                    <th>Abby</th>
+                    <th>Billy</th>
+                    <th>Cindy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Science</th>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Art</th>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>Math</th>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Average</th>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7.3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!--
+        Table Tags
+        ----------------
+
+        Root tag:
+        <table>
+
+        Title:
+        <caption>
+
+        Structuring tags:
+        <thead>
+        <tbody>
+        <tfoot>
+
+        Row tags:
+        <tr>
+
+        Cell tags:
+        <td>
+        <th>
+
+    -->
+</body>
+</html>
