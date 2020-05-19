@@ -1,0 +1,44 @@
+.first {
+    font-size: 25px;
+    color: red;
+}
+
+.second {
+    font-weight: bold;
+}
+
+.third {
+    text-decoration: underline;
+}
+
+.four {
+    font-style: italic;
+}
+
+.five {
+    text-indent: 32px;
+}
+
+.six {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seven {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.eight {
+    font-family: cursive;
+}
+
+.nine {
+    font-family: fantasy;
+}
+
+.ten {
+    text-align: center;
+}
+
+.eleven {
+    text-shadow: 10px 10px 10px red;
+}

@@ -1,0 +1,23 @@
+.box {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+}
+
+/* Any element directly within a margin*/
+.margin > * {
+    margin: 10px;
+}
+
+.border > * {
+    border: 1px solid black;
+}
+
+.blue > * {
+    background-color: lightblue;
+    font-size: 24px;
+}
+
+.padding > * {
+    padding: 5px;
+}

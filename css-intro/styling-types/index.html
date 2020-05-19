@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Methods</title>
+    <style>
+        .style-tag-rule {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Methods of applying styling</h1>
+    <ol>
+        <li>
+            <section>
+                <h2>Inline Styling</h2>
+                <p style="color: blue">Inline styling is providing styling information inline with 
+                    the tag. This is accomplished by using the style attribute
+                    and providing any relevant styles using the attribute value.
+                </p>
+                <p>Inline styles have the highest priority but are the least reusable.
+                    Do not use inline styles unless absolutely necessary.</p>
+            </section>
+        </li>
+
+        <li>
+            <section>
+                <h2>Style Tag</h2>
+                <p class="style-tag-rule">The style tag is a tag which can be defined in the document head.
+                    This tag can utilize css format styling rules to dictate styles
+                    for the current page.</p>
+                <p>Style tag usage is more reusable than inline tag names, but still 
+                    not the recommended styling mechanism as it is rare to build individual 
+                    pages in modern web development.  Style tags are only reusable within the
+                    single page and must be maintained and sent with an HTML document.
+                </p>
+            </section>
+        </li>
+
+        <li>
+            <section>
+                <h2>External Stylesheet</h2>
+                <p class="external-rule">
+                    The external stylesheet method is utilized by using a link tag
+                    in the head of the document to load an external .css file to act
+                    as the stylesheet for the page.  This stylesheet can be reused
+                    between html files making it highly reusable.  Additionally, its
+                    a dedicated .css sheet that is not directly embedded into a .html
+                    file so it cached and save on network activity. Rules defined in
+                    an external stylesheet have the lowest priority.
+                </p>
+            </section>
+        </li>
+    </ol>
+</body>
+</html>
