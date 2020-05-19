@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Text</title>
+    </head>
+    <body>
+        <!-- Heading Tags -->
+        <!-- Heading tags describe textual headings within a document -->
+        <!-- They come in 6 varieties describing the 'level' of heading -->
+        <h1>Top level heading</h1>
+        <h2>Secondary heading (sub section of the h1 content)</h2>
+        <h3>Subheading to h2</h3>
+        <h4>Subheading to h3</h4>
+        <h5>Subheading to h4</h5>
+        <h6>Subheading to h5</h6>
+
+        <!-- Paragraph tag -->
+        <!-- Describes a paragraph of text -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum laborum maxime aliquid iste nisi, qui aliquam odio in, amet debitis est repudiandae consequatur provident magni, necessitatibus ipsa natus autem sequi.</p>
+        <p>Another paragraph here!</p>
+        <p>A third paragraph!</p>
+
+        <h2>My friends in alphabetical order</h2>
+        <!-- List tags -->
+        <ol>
+            <!-- ol - ordered list -->
+            <!-- Lists are composed of list items -->
+            <li>Abby</li>
+            <li>Billy</li>
+            <li>Cindy</li>
+        </ol>
+
+        <h2>Fruit I like</h2>
+        <ul>
+            <!-- ul - Unordered list -->
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Kiwis</li>
+        </ul>
+
+        <!-- Definition List -->
+        <dl>
+            <!-- Definition term -->
+            <dt>Apple</dt>
+            <!-- Definition Description -->
+            <dd>A crisp non-citrus fruit with sweet or tart flavors.</dd>
+
+            <dt>Oranges</dt>
+            <dd>Tropical citrus fruit, with sweet to sour flavor</dd>
+        </dl>
+
+        <!--    Strongly emphasize content (generally text) -->
+        <!--    Emphasize content (generally text) -->
+        <p><strong>Lorem</strong>, <em>ipsum dolor sit</em> amet consectetur adipisicing elit. Itaque iusto accusamus in perspiciatis aliquid laboriosam mollitia odit recusandae? Repellat, porro dolore molestiae officiis magnam necessitatibus cupiditate molestias consequuntur? Non, velit.</p>
+
+        <!-- line breaks in HTML are ignored for display -->
+        <!-- Line breaks, extra spaces are considered file structuring not display structuring -->
+        <p>Hello
+            my    name is        Mitch,
+            and I am                             a sofware developer.
+                                        Sincerely,
+            Me.
+        </p>
+
+        <h2>Handling get request in Express with a Router</h2>
+        <code>
+            <pre>
+peopleRouter.get('/:id/pets', async (request, response, next) => {
+    const id: number = parseInt(request.params.id);
+
+    let pets: Pet[];
+
+    try {
+        pets = await peopleService.getPetsByPersonId(id);
+    } catch (err) {
+        response.sendStatus(500);
+        console.log(err);
+        return;
+    }
+
+    // Dao returns undefined for non-existent person
+    if (!pets) {
+        response.sendStatus(404);
+    } else {
+        response.json(pets);
+    }
+    next();
+});
+            </pre>
+        </code>
+    </body>
+</html>
