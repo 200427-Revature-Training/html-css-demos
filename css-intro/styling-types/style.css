@@ -1,3 +1,18 @@
 .external-rule {
     color: green;
 }
+
+/* 1. Tag selector */
+div {
+    /* some rule */
+}
+
+/* 2. Class selector */
+.class-name {
+    /* some rule */
+}
+
+/* 3. ID Selector */
+#id-name {
+    /* some rule */
+}

@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+}
+
+
+/*
+    Units for colors:
+    1. literal - (red, green, blue)
+    2. rgb - rgb(255, 255, 255) = white, rgb(0, 0, 0) = black, rgb(0, 0, 255) - pure blue
+    3. rgba - rgba(255, 0, 0, 1)
+    4. #AABBCC - Hex RGB value
+        Hex base-16 number system.  0123456789ABCDEF - #RRGGBB - RED: #FF0000; 
+*/
+
+/*
+    Build the landing page for the API project that you created for P0.
+    1. Creating wireframe for the page.
+    2. Create high level HTML structure.
+    3. Apply CSS rules to fit high level architecture.
+    4. Add content.
+    5. Style content.
+*/
+
+
+html {
+    min-height: 100vh;
+    background: #EEE;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*
+    Units for size:
+    px - (virtual) pixels
+    % - Percentage of parent element
+    pt - print related units
+    em - character width of parent element capital M
+    rem - relative em - character width of root's capital M
+    vh - view height - 1% of the view's height
+    vw - view width - 1% of the view's width
+    vmin - view min - 1% of the smaller dimension of the view
+    vmax - view max - 1% of the larger dimension of the view
+*/
+
+header {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+header > hr {
+    border-width: 2px;
+    border-radius: 100%;
+    color: grey;
+}
+
+#content-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+main {
+    min-width: 300px;
+    flex-grow: 3;
+}
+
+aside {
+    min-width: 200px;
+    flex-grow: 1;
+    max-width: 25%;
+}
