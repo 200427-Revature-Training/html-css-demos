@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bootstrap Grid</h1>
+    <hr>
+    <section>
+        <h2>Basic Example</h2>
+        <div class="container mx-0">
+            <div class="row">
+                <!-- 
+                    The grid has a size of 12 units
+                    We can explicitly specify the units by
+                    adding them to the class of col-# or
+                    col-size-#.
+                    If you don't specify a number, then remaining units
+                    are spread across size-unspecified elements.
+                -->
+
+                <div class="col-6 row-item">
+                    One of three columns - takes up 6 units of space
+                </div>
+                <div class="col-3 row-item">
+                    One of three columns - takes up 3 units of space
+                </div>
+                <div class="col row-item">
+                    One of three columns - implicitly takes up the remaining 3 units of space
+                </div>
+            </div>
+            <div class="row">
+                <div class="col row-item">Full width column</div>
+            </div>
+            <div class="row">
+                <div class="col-6 row-item">Half width column</div>
+                <!-- This column is offset by 3 units -->
+                <div class="col-3 row-item offset-3">1/4 width column</div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section>
+        <h2>Responsive Grid</h2>
+        <div class="container d-none d-md-block">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 row-item">Home</div>
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 row-item">Menu</div>
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 row-item">About</div>
+                <div class="col-12 col-sm-6 col-md-5 col-lg-3 row-item">Contact</div>
+            </div>
+        </div>
+
+        <div class="pos-f-t d-block d-md-none">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <div class="container mobile-menu">
+                        <div class="row text-white text-center">
+                            <div class="col-12">Home</div>
+                            <div class="col-12">Menu</div>
+                            <div class="col-12">About</div>
+                            <div class="col-12">Contact</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

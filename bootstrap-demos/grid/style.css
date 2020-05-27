@@ -1,0 +1,10 @@
+section {
+    padding: 10px;
+}
+
+.row-item {
+    background: #AAAAFF;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}

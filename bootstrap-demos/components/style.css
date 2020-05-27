@@ -1,0 +1,21 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background: red;
+    padding: 25px;
+    /* Content-Box = Height and width are the size of only the content area.
+                    Any padding or border is additional to the content. 
+        Total height is 100 + 25*2 + 0 = 150px                
+    */
+
+    /* Border-Box = Height and width are the sum of the content, padding, and 
+                    margins. 
+        Total height = 100px
+        Content height = 100 - 25*2 - 0 = 50px
+        */
+    box-sizing: border-box;
+}
+
+.mobile-menu > .row > *:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
